@@ -1,0 +1,18 @@
+version: '3'
+services:
+  redis:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+
+  commander:
+    hostname: redis-commander
+    image: ghcr.io/joeferner/redis-commander:latest
+    restart: unless-stopped
+    volumes:
+      - ./connections.json:/redis-commander/config/local.json:ro
+    environment:
+      - NODE_TLS_REJECT_UNAUTHORIZED=0
+    ports:
+      - "8081:8081"

@@ -1,0 +1,12 @@
+{
+  "connections": [
+    {
+      "label": "redis-docker",
+      "port": "6379",
+      "password": "3zjZM?%#y8X#Wv@nEHuh",
+      "dbIndex": 0,
+      "host": "redis",
+      "tls": true
+    }
+  ]
+}
