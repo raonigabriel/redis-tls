@@ -1,1 +1,2 @@
-pki/**
+redis/pki/**
+redis/truststore.jks

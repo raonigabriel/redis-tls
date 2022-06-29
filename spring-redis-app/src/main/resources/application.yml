@@ -1,0 +1,13 @@
+spring:
+  jackson:
+    time-zone: GMT
+    serialization:
+      indent-output: true
+  redis:
+    password: 3zjZM?%#y8X#Wv@nEHuh
+    ssl: true
+    
+truststore:
+  type: JKS
+  path: ../redis/truststore.jks
+  password: changeit
