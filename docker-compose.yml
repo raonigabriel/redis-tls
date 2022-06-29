@@ -11,7 +11,7 @@ services:
     image: ghcr.io/joeferner/redis-commander:latest
     restart: unless-stopped
     volumes:
-      - ./connections.json:/redis-commander/config/local.json:ro
+      - ./redis/connections.json:/redis-commander/config/local.json:ro
     environment:
       - NODE_TLS_REJECT_UNAUTHORIZED=0
     ports:
