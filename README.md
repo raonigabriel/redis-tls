@@ -8,11 +8,15 @@ An example to demonstrate how to run redis on docker, using tls.
 - Docker Compose
 ---
 ## Usage:
-- Run **"gen_cert.sh"** to create a CA and certificates, just hit **ENTER** till it finishes. This will create a folder **"./pki"**.
+- Go to "redis folder then run **"gen_cert.sh"** to create a CA and certificates, just hit **ENTER** till it finishes. This will create a folder **"./pki"**.
+
+- After that, run **"gen_truststore.sh"** to create a CA and certificates, just hit **ENTER** till it finishes. This will create a file **"truststore.jks"**.
 
 - Run "docker-compose up -d"
 
-- Access http://localhost:8081
+- Access http://localhost:8081 (redis-commander)
+
+- Go to "spring-redis-app" folder and run the spring boot app: ```./mvnw spring-boot:run```
 
 ---
 ## Disclaimer:
