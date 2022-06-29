@@ -12,7 +12,7 @@ An example to demonstrate how to run redis on docker, using tls.
 
 - After that, run **"gen_truststore.sh"** to create a CA and certificates, just hit **ENTER** till it finishes. This will create a file **"truststore.jks"**.
 
-- Run "docker-compose up -d"
+- On the root folder, run "docker-compose up -d"
 
 - Access http://localhost:8081 (redis-commander)
 
